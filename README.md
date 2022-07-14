@@ -3,14 +3,37 @@
 Provided a 3D model and a set of N camera views, system outputs:
 ![](https://github.com/3cology/3D_computer_vision_simulator/blob/master/media/3d_computer_vision_simulator.png)
 
-A 3D graphics simulator for generating per-view, per-pixel 3D model ground truth outputs.  This can support AI and 3D computer vision researchers developing inverse rendering systems, for shaping a photorealistic 3D metaverse.  
+#### Let there be renders
+The simulator is based in simulator.py, with an example to get one view implemented in the main function: 
 
+```python
+if __name__ == "__main__":  
+  # instantiate our 3D computer vision system with a 3D model (compressed glTF)
+  iris = Iris(model="models/shoe.glb", resolution=1.0)
+
+  # view a particular 6D perspective 
+  iris.view(x=133.037, y=3.604, z=11.048, rotation_x=88.326, rotation_y=0.835, rotation_z=91.31)
+
+  # capture 3D scan data
+  iris.scan(exposure_time=3.0, scan_id=0)
+
+  # view another perspective
+  iris.view(x=8.352, y=1.878, z=128.7, rotation_x=1.123, rotation_y=0.393, rotation_z=89.881)
+
+  # capture a 2nd 3D scan from another perspective
+  iris.scan(exposure_time=3.0, scan_id=1)
+
+```
+#### Motivation
+This is a 3D graphics simulator for generating per-view, per-pixel 3D model ground truth outputs.  It can support AI and 3D computer vision researchers developing inverse rendering systems, for shaping a photorealistic 3D metaverse.  
+
+#### Installation
 Instructions for installing and developing on the simulator, with optics and photonics modeled after the Iris 3D scanning system by 3co.
 
-#### Install via Command Line Terminal
+## Install via Command Line Terminal
 0. Get this directory on your computer  
-   `git clone https://github.com/3cology/research.git`  
-   `cd research`
+   `git clone https://github.com/3cology/inverse_render_simulator.git`  
+   `cd inverse_render_simulator`
 
 1. Download Blender LTS Release 2.83.13 [here](https://www.blender.org/download/lts/ "here"). Unzip.
 
@@ -36,27 +59,6 @@ Instructions for installing and developing on the simulator, with optics and pho
    ```blender_py -m pip install opencv-python```  
    ```blender_py -m pip install imageio```  
 
-#### Let there be renders
-The simulator is based in simulation/simulator.py, with an example to get one view implemented in the main function: 
-
-```python
-if __name__ == "__main__":  
-  # instantiate our 3D computer vision system with a 3D model (compressed glTF)
-  iris = Iris(model="models/shoe.glb", resolution=1.0)
-
-  # view a particular 6D perspective 
-  iris.view(x=133.037, y=3.604, z=11.048, rotation_x=88.326, rotation_y=0.835, rotation_z=91.31)
-
-  # capture 3D scan data
-  iris.scan(exposure_time=3.0, scan_id=0)
-
-  # view another perspective
-  iris.view(x=8.352, y=1.878, z=128.7, rotation_x=1.123, rotation_y=0.393, rotation_z=89.881)
-
-  # capture a 2nd 3D scan from another perspective
-  iris.scan(exposure_time=3.0, scan_id=1)
-
-```
 
 Decide whether to run the code on gpu or cpu by setting `device=` to either.  
 To run with CPU only:
