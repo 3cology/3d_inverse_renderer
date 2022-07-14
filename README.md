@@ -1,10 +1,14 @@
-### 3D simulator in Blender through Python, for computer vision and inverse rendering AI
+## 3D simulator for computer vision and inverse rendering AI
+#### Powered by Blender, based in Python, designed for researchers
 
 Provided a 3D model and a set of N camera views, system outputs:
 ![](https://github.com/3cology/3D_computer_vision_simulator/blob/master/media/3d_computer_vision_simulator.png)
 
+## Motivation
+This is a 3D graphics simulator for generating per-view, per-pixel 3D model ground truth outputs.  It can support AI and 3D computer vision researchers developing inverse rendering systems, for shaping a photorealistic 3D metaverse.  
+
 #### Let there be renders
-The simulator is based in simulator.py, with an example to get one view implemented in the main function: 
+The simulator is based in simulator.py, with a simple API for creating renders with ground truth metadata: 
 
 ```python
 if __name__ == "__main__":  
@@ -24,10 +28,8 @@ if __name__ == "__main__":
   iris.scan(exposure_time=3.0, scan_id=1)
 
 ```
-#### Motivation
-This is a 3D graphics simulator for generating per-view, per-pixel 3D model ground truth outputs.  It can support AI and 3D computer vision researchers developing inverse rendering systems, for shaping a photorealistic 3D metaverse.  
 
-#### Installation
+## Installation
 Instructions for installing and developing on the simulator, with optics and photonics modeled after the Iris 3D scanning system by 3co.
 
 ## Install via Command Line Terminal
