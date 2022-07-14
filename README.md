@@ -1,6 +1,6 @@
 # 3D inverse rendering simulator
 
-Provided a 3D model and a set of N camera views, the simulator outputs:
+Provided a 3D model and a set of N camera views, the simulator outputs for every pixel, for every view:
 ![](https://github.com/3cology/3D_computer_vision_simulator/blob/master/media/3d_computer_vision_simulator.png)
 
 ## Motivation
