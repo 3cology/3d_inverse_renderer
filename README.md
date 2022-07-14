@@ -1,7 +1,7 @@
 # 3D inverse rendering simulator
 
 Provided a 3D model and a set of N camera views, the simulator outputs:
-![](https://github.com/3cology/3D_computer_vision_simulator/blob/master/media/3d_computer_vision_simulator.png)
+![](https://github.com/3cology/3d_inverse_renderer/blob/master/media/3d_computer_vision_simulator.png)
 
 ## Motivation
 This is a 3D graphics simulator for generating per-view, per-pixel 3D model ground truth outputs.  It can support AI and 3D computer vision researchers developing inverse rendering systems.  
@@ -33,8 +33,8 @@ Instructions for installing and developing on the simulator, with optics and pho
 
 #### Install via command line terminal
 0. Get this directory on your computer  
-   `git clone https://github.com/3cology/inverse_render_simulator.git`  
-   `cd inverse_render_simulator`
+   `git clone https://github.com/3cology/3d_inverse_renderer.git`  
+   `cd 3d_inverse_renderer`
 
 1. Download Blender LTS Release 2.83.13 [here](https://www.blender.org/download/lts/ "here"). Unzip.
 
