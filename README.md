@@ -1,4 +1,4 @@
-# 3D simulator for computer vision AI
+# 3D inverse rendering simulator for computer vision AI
 
 Provided a 3D model and a set of N camera views, system outputs:
 ![](https://github.com/3cology/3D_computer_vision_simulator/blob/master/media/3d_computer_vision_simulator.png)
