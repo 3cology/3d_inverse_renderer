@@ -1,4 +1,4 @@
-### 3D simulator in Blender + Python for computer vision and inverse rendering AI
+### 3D simulator in Blender through Python, for computer vision and inverse rendering AI
 
 ![](https://github.com/3cology/3D_computer_vision_simulator/blob/master/media/3d_computer_vision_simulator.png)
 
